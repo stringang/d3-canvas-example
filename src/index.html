@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d3-canvas</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/d3/5.15.0/d3.js"></script>
+</head>
+<body>
+    <div id=“container”>
+        <canvas id="histogram"></canvas>
+    </div>
+
+    <script type="text/javascript">
+      function start() {
+        let num = Math.random();
+
+      }
+
+      var canvas = document.getElementById('histogram');
+      var ctx = canvas.getContext('2d');
+
+      var margin = {top: 10, right: 30, bottom: 30, left: 40};
+      var width = 460 - margin.left - margin.right;
+      var height = 400 - margin.top - margin.bottom;
+
+      var histogram = d3.histogram([1, 2, 3]);
+
+    </script>
+</body>
+</html>
